@@ -33,7 +33,7 @@ THE SOFTWARE.
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.70</version>
+        <version>4.83</version>
         <relativePath />
     </parent>
 
@@ -49,7 +49,7 @@ THE SOFTWARE.
         <changelist>-SNAPSHOT</changelist>
         <jacoco.version>0.8.11</jacoco.version>
         <!-- see https://www.jenkins.io/changelog-stable/ for changelog of the LTS releases -->
-        <jenkins.version>2.426.3</jenkins.version>
+        <jenkins.version>2.440.3</jenkins.version>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
         <!-- Do not fail if tests are run without argLine -->
         <argLine />
@@ -122,8 +122,8 @@ THE SOFTWARE.
         <dependencies>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-2.426.x</artifactId>
-                <version>2884.vc36b_64ce114a_</version>
+                <artifactId>bom-2.440.x</artifactId>
+                <version>3135.v6d6c1f6b_3572</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -321,7 +321,6 @@ THE SOFTWARE.
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>**/Messages.*</exclude>
